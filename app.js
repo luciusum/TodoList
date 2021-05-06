@@ -1,5 +1,3 @@
-// Форма
-// Список задач
 const tasks = [
   {
     _id: "5d2ca9e2e03d40b326596aa7",
@@ -107,7 +105,7 @@ const tasks = [
   };
   let lastSelectedTheme = localStorage.getItem("app_theme") || "default";
 
-  // Elemnts UI
+ 
   const listContainer = document.querySelector(
     ".tasks-list-section .list-group"
   );
@@ -116,7 +114,7 @@ const tasks = [
   const inputBody = form.elements["body"];
   const themeSelect = document.getElementById("themeSelect");
 
-  // Events
+
   setTheme(lastSelectedTheme);
   renderAllTasks(objOfTasks);
   form.addEventListener("submit", onFormSubmitHandler);
